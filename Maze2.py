@@ -147,17 +147,10 @@ class pos:
         self.x = x
 
 if __name__ == '__main__':
-    
-    print("move_up 'W'")
-    print("move_down 'S'")
-    print("move_left 'A'")
-    print("move_right 'D'")
-    print("move_Auto 'M'")
-    
+
     m = maze()
     m.print()
     path = m.find_path()
-
 
     while True:
         if keyboard.is_pressed("q"):
@@ -184,7 +177,7 @@ if __name__ == '__main__':
             else:
                 break
             
-        if keyboard.is_pressed("m"):
+        if keyboard.is_pressed("o"):
             for step in path:
                 if step == "up":
                     m.move_up()
@@ -203,4 +196,4 @@ if __name__ == '__main__':
 # print("move_down 'S'")
 # print("move_left 'A'")
 # print("move_right 'D'")
-# print("move_Auto 'M'")
+# print("move_Auto 'O'")
