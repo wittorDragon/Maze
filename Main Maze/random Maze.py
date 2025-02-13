@@ -27,8 +27,8 @@ def print_maze(maze):
         print("".join(row))
     print()
 
-sizes = [(10, 10), (12, 12), (15, 15)]
-complexities = [18, 40, 30,]
+sizes = [(10, 10), (12, 12), (15, 15),(40, 40)]
+complexities = [18, 40, 30,10000,]
 mazes = [generate_maze(w, h, c) for (w, h), c in zip(sizes, complexities)]
 
 for i, maze in enumerate(mazes):

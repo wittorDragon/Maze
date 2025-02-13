@@ -36,7 +36,7 @@ class Maze:
         self.wn.setworldcoordinates(- (columns_in_maze - 1) / 2 - 5,- (rows_in_maze - 1) / 2 - 5,(columns_in_maze - 1) / 2 + 5,(rows_in_maze - 1) / 2 + 5)
     
     def draw_maze(self):
-        self.t.speed(100)
+        self.t.speed(0)
         for y in range(self.rows_in_maze):
             for x in range(self.columns_in_maze):
                 if 0 <= y < len(self.maze_list) and 0 <= x < len(self.maze_list[0]):
@@ -197,7 +197,7 @@ if __name__ == "__main__":
     # time.sleep(2)
     # clear()
 
-    # maze_7 = Maze('maze7.txt')
+    # maze_7 = Maze('mazeHard.txt')
     # maze_7.draw_maze()
     # maze_7.update_position(maze_7.start_row, maze_7.start_col)
     # search_from(maze_7, maze_7.start_row, maze_7.start_col)
@@ -205,7 +205,7 @@ if __name__ == "__main__":
     # time.sleep(2)
     # clear()
 
-    # maze_8 = Maze('maze8.txt')
+    # maze_8 = Maze('mazeHard2.txt')
     # maze_8.draw_maze()
     # maze_8.update_position(maze_8.start_row, maze_8.start_col)
     # search_from(maze_8, maze_8.start_row, maze_8.start_col)
