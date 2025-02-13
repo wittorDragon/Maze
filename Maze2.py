@@ -16,7 +16,7 @@ class maze:
                  
         self.ply = pos(5, 1)
         self.end = pos(2, 6)
-        self.maze[self.ply.y][self.ply.x] = "R"
+        self.maze[self.ply.y][self.ply.x] = "P"
         self.maze[self.end.y][self.end.x] = "E"
     
     def isInBound(self, y, x):
